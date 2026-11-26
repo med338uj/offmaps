@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+  Based on a free website template by 8B: https://8b.com/templates/midblock/
+  Source: https://github.com/8bsite/architecture-website-template @7ec5c2f (MIT, see LICENSE and CREDITS.md)
+  Brand version for OFF MAPS — mystery travel across Morocco: content adapted, official logo in public/brand/, photos to be replaced (see IMAGE-SLOTS.md) · Fonts: Google Fonts (OFL), self-hosted in public/fonts.
+  Migrated to React (Vite + TypeScript + React Router); scroll motion stays CSS scroll-driven animations plus src/motion/motionKit.ts, no libraries.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-mgx-overview="title">OFF MAPS — mystery travel across Morocco · You pick the vibe, we pick the place</title>
+    <meta data-mgx-overview="description" name="description" content="OFF MAPS sells mystery travel tickets across Morocco. Choose one of three universes — Atlas, Sahara or Coast — and we plan the rest: the place, the departure, the stay and the days, sealed until it opens. You pick the vibe. We pick the place." />
+    <meta name="generator" content="8B Templates" />
+    <meta property="og:type" content="website" />
+    <meta data-mgx-overview="og:title" property="og:title" content="OFF MAPS — mystery travel across Morocco · You pick the vibe, we pick the place" />
+    <meta data-mgx-overview="og:description" property="og:description" content="OFF MAPS sells mystery travel tickets across Morocco. Choose one of three universes — Atlas, Sahara or Coast — and we plan the rest: the place, the departure, the stay and the days, sealed until it opens." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link data-mgx-overview="icon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Motion gate (data-8b-part="motion-gate"): scroll scenes run only with scroll-driven animation support and no reduced-motion preference. -->
+    <script>
+      if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+    </script>
+  </head>
+  <body class="m-text">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
